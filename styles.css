@@ -1,0 +1,71 @@
+body {
+    background-color: #011F3F;
+    ;
+    margin: 0;
+    color: #FEF2BF;
+    text-align: center;
+}
+
+.title>h1 {
+    margin: 4rem 0 5rem;
+    font-size: 3rem;
+    font-family: "Press Start 2P", cursive;
+}
+
+/* .buttons {
+    width: 50%;                             instead of text-aign: center in the body tag.
+    margin: 0 auto;        
+    text-align: center;
+} */
+
+/* .buttons {
+    width: 30%;
+    margin: 0 auto;                 to make 4 boxes where 2 of them is above and 2 boxes below.
+}
+button {
+    width: 8rem;
+    height: 8rem;
+} */
+
+.buttons {
+    display: grid;
+    grid-template-columns: 220px 220px;
+    justify-content: center;
+    grid-template-rows: 220px 220px;
+    gap: 50px;
+}
+
+button {
+    border-radius: 20%;
+    border: 10px solid black;
+}
+
+footer {
+    margin: 4rem 0 1rem;
+}
+
+.green {
+    background-color: green;
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.blue {
+    background-color: blue;
+}
+
+/* animation */
+.pressed {
+    box-shadow: 0 0 20px white;
+    background-color: grey;
+}
+
+.game-over {
+    background-color: red;
+}
